@@ -1,5 +1,4 @@
 install:
-	composer install;
 	npm install;
 	cp app/db.dist.php app/db.php;
 
