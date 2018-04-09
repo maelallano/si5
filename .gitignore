@@ -2,3 +2,4 @@
 app/config/db.php
 node_modules
 /vendor/
+public/Unity/Build_Web.asm.code.unityweb
