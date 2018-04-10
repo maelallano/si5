@@ -4,6 +4,26 @@
     require DIR_VIEWS . '/main/header.inc.php';
 ?>
 
+<div id="loaderContainer">
+	<div class="cog-loader">
+	  <div class="cog-wrap">
+	    <div class="cog">
+	      <div class="spoke-wrap">
+	        <div class="spoke">
+	          <div class="spoke">      
+	            <div class="spoke">
+	              <div class="spoke">
+	                <div class="spoke"></div>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+</div>
+
 <div class="webgl-content">
     <div id="gameContainer" style="width:1280px;height:720px"></div>
     <div class="footer">
