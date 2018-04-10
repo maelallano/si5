@@ -1,5 +1,10 @@
-$test: red;
+// Colors
+$color1: #fff;
+
+// Fonts
+$font1: 'Arial';
 
 body {
-  background: $test;
+  background: $color1;
+  font-family: $font1;
 }
