@@ -1,5 +1,5 @@
 .idea
-app/config/db.php
+app/db.php
 node_modules
 /vendor/
 public/Unity/Build_Web.asm.code.unityweb
