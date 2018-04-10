@@ -4,3 +4,4 @@ node_modules
 /vendor/
 public/Unity/Build_Web.asm.code.unityweb
 public/build/app.js
+public/build/app.css
