@@ -4,24 +4,10 @@
     require DIR_VIEWS . '/main/header.inc.php';
 ?>
 
-<div id="loaderContainer">
-	<div class="cog-loader">
-	  <div class="cog-wrap">
-	    <div class="cog">
-	      <div class="spoke-wrap">
-	        <div class="spoke">
-	          <div class="spoke">      
-	            <div class="spoke">
-	              <div class="spoke">
-	                <div class="spoke"></div>
-	              </div>
-	            </div>
-	          </div>
-	        </div>
-	      </div>
-	    </div>
-	  </div>
-	</div>
+<div class="loader-modal" id="loader">
+    <div class="loader">
+        <img src="/images/aperture-icon.png" class="loader-icon" />
+    </div>
 </div>
 
 <div class="webgl-content">
