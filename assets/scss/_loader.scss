@@ -1,0 +1,102 @@
+@keyframes cog-spinner {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes cog-spinner {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes cog-breath {
+  50% {
+    border-bottom-color: #08c;
+  }
+}
+
+@-webkit-keyframes cog-breath {
+  50% {
+    border-bottom-color: #08c;
+  }
+}
+
+$delaytime: 0.4s;
+$time: 2s;
+$size: 50px;
+$spoke: 8px;
+$expand: 6.5px;
+
+#loaderContainer {
+  position: fixed;
+  z-index: 1000;
+}
+
+.cog-loader {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.875);
+  
+  * {
+    transition: none;
+    -webkit-transition: none;
+    box-sizing: content-box;
+  }
+  
+  .cog-wrap {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    height: $size - ($expand * 2);
+    width: $size - ($expand * 2);
+    overflow: hidden;
+    border-radius: 100%;
+    
+    .cog {
+      position: relative;
+      float: left;
+      width: $size;
+      height: $size;
+      left: -$expand;
+      top: -$expand;
+      box-sizing: border-box;
+      transform-origin: center center;
+      -ms-transform-origin: center center;
+      -webkit-transform-origin: center center;
+      animation: cog-spinner $time * 2 linear infinite;
+      -webkit-animation: cog-spinner $time * 2 linear infinite;
+      
+      .spoke-wrap {
+        position: absolute;
+        top: $expand;
+        left: -($spoke * 2);
+        height: 100%;
+        width: 100%;
+        
+        .spoke {
+          position: absolute;
+          right: ($spoke * 2) - ($expand / 2);
+          width: $spoke;
+          height: 0;
+          border: $spoke solid transparent;
+          border-bottom-color: #dadada;
+          border-bottom-width: $spoke;
+          transform: rotate(288deg);
+        }
+
+        $sel: ".spoke";
+        @for $i from 1 through 5 {
+          $sel: if($i == 1, ".spoke", selector-nest($sel, ".spoke"));
+          #{$sel} {
+            animation: cog-breath $time linear ($i * $delaytime) infinite;
+            -webkit-animation: cog-breath $time linear ($i * $delaytime) infinite;
+          }
+        }
+      }
+    }
+  }
+}
