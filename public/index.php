@@ -5,8 +5,13 @@
 ?>
 
 <div class="loader-modal" id="loader">
-    <div class="loader">
-        <img src="/images/aperture-icon.png" class="loader-icon" />
+    <div class="loadersWrapper">
+        <div class="loader">
+            <img src="/images/aperture-icon.png" class="loader-icon" />
+        </div>
+        <div class="loadingBarContainer">
+          <div class="loadingBar"></div>
+        </div>
     </div>
 </div>
 

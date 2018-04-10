@@ -27,7 +27,23 @@ let gameInstance = UnityLoader.instantiate("gameContainer", "Unity/build_web.jso
  */
 let loaderContainer = document.querySelector('#loader');
 
+var loadingBarContainer = document.querySelector(".loadingBarContainer");
+var loadingBar = document.querySelector(".loadingBar");
+
+var counter = 0;
+var i = setInterval(function() {
+  counter++;
+  console.log(counter);
+
+  loadingBar.style.width = counter + '%';
+  if(counter == 101) {
+    clearInterval(i);
+  }
+}, 30);
+
 setTimeout(() => {
-	loaderContainer.style.display = 'none';
 	loaderContainer.classList.add('fade-out');
+	setTimeout(() => {
+		loaderContainer.style.display = 'none';
+	}, 1000);
 }, 3000);
