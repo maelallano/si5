@@ -14,9 +14,14 @@ function isLogged ()
     }
 }
 
+/**
+ * CSRF token generator
+ *
+ * @return string
+ */
 function genToken ()
 {
-    return md5(uniqid(rand(), TRUE));
+    return bin2hex(random_bytes(32));
 }
 
 /**
@@ -29,6 +34,17 @@ function setCSRF ()
     $token =  genToken();
 
     $_SESSION['csrf'] = $token;
+}
+
+/**
+ * Verify CSRF hash token
+ *
+ * @param $csrf
+ * @return bool
+ */
+function verifyCSRF ($csrf)
+{
+    return hash_equals($_SESSION['csrf'], $csrf);
 }
 
 /**

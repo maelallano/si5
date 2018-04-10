@@ -1,5 +1,4 @@
 <?php
-$_SESSION['csrf'] = '';
 require __DIR__ . '/../app/config.php';
 
 require DIR_VIEWS . '/main/header.inc.php';
@@ -7,8 +6,6 @@ require DIR_VIEWS . '/main/header.inc.php';
 if (isLogged()) {
     redirect('admin.php');
 }
-
-echo $_SESSION['csrf'];
 ?>
 
     <div class="container backOffice">

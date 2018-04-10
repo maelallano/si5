@@ -1,5 +1,12 @@
 <?php
 
+/**
+ * Semaine Intensive 5
+ * Configuration file
+ *
+ * @version 1.0.0
+ */
+
 // Permet d'activer temporairement les erreurs PHP
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
@@ -36,14 +43,13 @@ $options = array(
 
 try {
     $bdd = new PDO($dsn, $db['user'], $db['password'], $options);
-}
-// catch any errors
-catch (PDOException $e){
+} catch (PDOException $e) {
     $error = $e->getMessage();
 }
 
 // Session init
-if (!isset($_SESSION['auth']) || $_SESSION['auth'] != true) {
+if (!isset($_SESSION['auth']) || $_SESSION['auth'] !== true)
+{
     $_SESSION['auth'] = false;
 }
 
