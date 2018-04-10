@@ -10,6 +10,20 @@
     </div>
 </div>
 
+<!-- start template scrollTo -->
+
+<!-- <div id="div1" style="height: 1000px; width 100px">
+    Test 1
+</div>
+<br/>
+<div id="div2" style="height: 1000px; width 100px">
+    Test 2
+</div>
+<button id="click1">Click me 1</button>
+<button id="click2">Click me 2</button> -->
+
+<!-- end template scrollTo -->
+
 <div class="webgl-content">
     <div id="gameContainer" style="width:1280px;height:720px"></div>
     <div class="footer">
