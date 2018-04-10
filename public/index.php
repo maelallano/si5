@@ -1,7 +1,7 @@
 <?php
     require __DIR__ . '/../app/config.php';
 
-    require DIR_VIEWS . '/header.inc.php';
+    require DIR_VIEWS . '/main/header.inc.php';
 ?>
 
 <div class="webgl-content">
@@ -19,5 +19,5 @@
 <script src="<?=WEBROOT?>build/app.js"></script>
 
 <?php
-    require DIR_VIEWS . '/footer.inc.php';
+    require DIR_VIEWS . '/main/footer.inc.php';
 ?>

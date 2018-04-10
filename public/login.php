@@ -26,19 +26,19 @@ echo $_SESSION['csrf'];
                 }
             ?>
 
-            <form action="<?=WEBROOT?>do/login.php" method="post" class="form-sub">
+            <form  action="<?=WEBROOT?>do/login.php" method="post" class="form-sub">
                 <div>
-                    <label for="username">Nom d'utilisateur :</label>
-                    <input type="text" name="username" id="username">
+
+                    <input class="button" type="text" name="username" id="username" placeholder="Identifiant">
                 </div>
 
                 <div>
-                    <label for="password">Mot de passe :</label>
-                    <input type="password" name="password" id="password">
+
+                    <input class="button" type="password" name="password" placeholder="password" id="password">
                 </div>
 
                 <div>
-                    <input type="submit" value="Connexion">
+                    <input class="button submit" type="submit" value="Connexion">
                 </div>
             </form>
         </div>
