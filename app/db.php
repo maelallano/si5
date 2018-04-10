@@ -4,6 +4,6 @@ $db = [
     'host' => '127.0.0.1',
     'dbname' => 'si5',
     'user' => 'root',
-    'password' => 'cvbn974',
+    'password' => 'secret',
     'charset' => 'utf8'
 ];
