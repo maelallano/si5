@@ -1,9 +1,15 @@
 import '../scss/common.scss';
+var $ = require('jquery');
 
-var gameInstance = UnityLoader.instantiate("gameContainer", "Unity/build_web.json", { onProgress: UnityProgress });
+let gameInstance = UnityLoader.instantiate("gameContainer", "Unity/build_web.json", { onProgress: UnityProgress });
 
-var loaderContainer = document.querySelector('#loaderContainer');
+/**
+ * Loader overlay
+ *
+ * @type {Element | null}
+ */
+let loaderContainer = document.querySelector('#loader');
 
 setTimeout(() => {
-	loaderContainer.style.display = 'none';
+	loaderContainer.classList.add('fade-out');
 }, 3000);
