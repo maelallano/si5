@@ -5,7 +5,7 @@ blabla wEbGL blablabla
 ## Installation
 
 ~~~
-make install
+sudo make install
 ~~~
 
 Modify app/db.php
