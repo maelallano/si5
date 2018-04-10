@@ -4,6 +4,7 @@
   "description": "Projet de semaine intensive",
   "main": "index.js",
   "dependencies": {
+    "jquery": "^3.3.1",
     "unity-loader": "^1.0.11"
   },
   "devDependencies": {
