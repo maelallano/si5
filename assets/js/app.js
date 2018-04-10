@@ -11,5 +11,6 @@ let gameInstance = UnityLoader.instantiate("gameContainer", "Unity/build_web.jso
 let loaderContainer = document.querySelector('#loader');
 
 setTimeout(() => {
+	loaderContainer.style.display = 'none';
 	loaderContainer.classList.add('fade-out');
 }, 3000);
