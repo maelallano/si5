@@ -39,3 +39,17 @@ Watch assets
 ~~~
 make watch
 ~~~
+
+## Migrations
+
+Create database and/or import database schemas
+
+~~~
+make migration-run
+~~~
+
+Commit your changements on the database schemas
+
+~~~
+make migration-commit
+~~~
