@@ -9,18 +9,18 @@ header {
 
 	.header {
 		margin: auto;
-		width: 1440px;
+		width: 90%;
 		height: 100%;
 		display: flex;
 
 		&-logo {
-			width: 65%;
+			width: 80%;
 			height: 100%;
 			display: flex;
 			align-items: center;
 		}
 		&-navBar {
-			width: 35%;
+			width: 20%;
 			height: 100%;
 			display: flex;
 			align-items: center;
@@ -30,12 +30,16 @@ header {
 			display: flex;
 			justify-content: space-between;
 			text-transform: uppercase;
-			color: $navBarColor;
+			color: #fff;
+			font-family: $textExtraLight;
+			font-size: 13px;
 			li {
 				cursor: pointer;
 			}
 			li:hover {
 				text-decoration: underline;
+				color: $blue;
+				transition: color .2s ease;
 			}
 		}
 	}

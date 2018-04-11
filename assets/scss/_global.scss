@@ -1,7 +1,33 @@
 // Colors
+$orange: #F38F19;
+$blue: #51A7F9;
 $color1: #fff;
 
-// Fonts
+// FONTS
+@font-face {
+  font-family: "oswald-extraLight";
+  src: url("fonts/Oswald-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "oswald-light";
+  src: url("fonts/Oswald-Light.ttf");
+}
+
+@font-face {
+  font-family: "oswald-regular";
+  src: url("fonts/Oswald-Regular.ttf");
+}
+
+@font-face {
+  font-family: "oswald-bold";
+  src: url("fonts/Oswald-Bold.ttf");
+}
+
+$textExtraLight: "oswald-extraLight";
+$textLight: "oswald-light";
+$textRegular: "oswald-regular";
+$textBold: "oswald-bold";
 $font1: 'Arial';
 
 // Layer Width

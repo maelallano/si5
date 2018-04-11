@@ -4,11 +4,11 @@
     require DIR_VIEWS . '/main/header.inc.php';
 ?>
 
-<div class="loader-modal" id="loader">
+<!--<div class="loader-modal" id="loader">
     <div class="loader">
         <img src="/images/aperture-icon.png" class="loader-icon" />
     </div>
-</div>
+</div>-->
 
 <header>
     <div class="header">
@@ -186,10 +186,18 @@
 
 <!-- start template scrollTo -->
 
-<br><br><br><br>
-<div id="div1" style="height: 1000px; width 100px">
-    Test 1
-</div>
+
+<section class="Video-section" id="div1" style="height: 1000px; width 100px">
+  <div class="Video-section__video">
+    <div class="Video-section__video__overlay"></div>
+    <video autoplay loop muted>
+      <source src="videos/escape.mp4">
+      Your browser does not support the video tag.
+    </video>
+
+  </div>
+
+</section>
 
 <!-- end template scrollTo -->
 
@@ -200,7 +208,7 @@
             <h3 class="portalGunSection-title">portal gun</h3>
         </div>
         <p class="portalGunSection-textContainer">
-            Aperture Science vous propose aujourd’hui une révolution.<br/> 
+            Aperture Science vous propose aujourd’hui une révolution.<br/>
             Un seul point d’entrée, un seul point de sortie. <br/>
             Entre les deux, un univers à découvrir.<br/>
             Le futur est enfin là.
@@ -218,13 +226,57 @@
     </div>
 </section>
 
-<div class="webgl-content">
+<!--<div class="webgl-content">
     <div id="gameContainer" style="width:1280px;height:720px"></div>
     <div class="footer">
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
     </div>
-</div>
+</div>-->
+
+<!-- ESCAPE GAME SECTION -->
+<section class="Escape-section">
+  <div class="Escape-section__description">
+    <div class="Escape-section__description__left-border"></div>
+    <div class="Escape-section__description__container">
+      <span class="Escape-section__description__container__number">02</span>
+      <p class="Escape-section__description__container__title">L'Escape Game</p>
+      <p class="Escape-section__description__container__paragraph">Seul ou à deux, entrez dans l’Escape Game le plus <br /> immersif au monde.<br /> Un seul objectif : trouver la clé de sortie avant la fin du temps imparti. <br /> Un seul conseil : Oubliez tout ce que vous saviez, <br />ce que vous allez vivre
+        dépasse <br />tout ce que vous avez pu imaginer…
+      </p>
+    </div>
+  </div>
+  <div class="Escape-section__video">
+    <video autoplay loop muted>
+      <source src="videos/escape.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <p class="Escape-section__quote">"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.”</p>
+  <div class="Escape-section__registration">
+    <div class="Escape-section__registration__decoration">
+      <img src="images/white_deco.png" alt="decoration">
+    </div>
+    <span class="Escape-section__registration__title">Rejoignez l'expérience</span>
+    <div class="Escape-section__registration__icons">
+      <div class="Escape-section__registration__icons__icon-container"><img src="images/icon_01.png" alt=""></div>
+      <div class="Escape-section__registration__icons__icon-container"><img src="images/icon_02.png" alt=""></div>
+      <div class="Escape-section__registration__icons__icon-container"><img src="images/icon_03.png" alt=""></div>
+      <div class="Escape-section__registration__icons__icon-container"><img src="images/icon_04.png" alt=""></div>
+      <div class="Escape-section__registration__icons__icon-container"><img src="images/icon_05.png" alt=""></div>
+      <div class="Escape-section__registration__icons__icon-container"><img src="images/icon_06.png" alt=""></div>
+      <div class="Escape-section__registration__icons__icon-container"><img src="images/icon_07.png" alt=""></div>
+      <div class="Escape-section__registration__icons__icon-container"><img src="images/icon_08.png" alt=""></div>
+      <div class="Escape-section__registration__icons__icon-container"><img src="images/icon_09.png" alt=""></div>
+      <div class="Escape-section__registration__icons__icon-container"><img src="images/icon_10.png" alt=""></div>
+    </div>
+    <span class="Escape-section__registration__span">Inscrivez-vous.</span>
+    <div class="Escape-section__registration__container">
+      <a class="Escape-section__registration__container__link"><img src="images/test.svg" alt="register_icon"></a>
+    </div>
+  </div>
+</section>
+<!-- END ESCAPE GAME SECTION -->
 
 <script src="<?=WEBROOT?>Unity/UnityLoader.js"></script>
 
