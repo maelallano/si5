@@ -4,11 +4,11 @@
     require DIR_VIEWS . '/main/header.inc.php';
 ?>
 
-<!--<div class="loader-modal" id="loader">
+<div class="loader-modal" id="loader">
     <div class="loader">
         <img src="/images/aperture-icon.png" class="loader-icon" />
     </div>
-</div>-->
+</div>
 
 <header>
     <div class="header">
@@ -184,55 +184,63 @@
     </div>
 </header>
 
-<!-- start template scrollTo -->
 
-
-<section class="Video-section" id="div1" style="height: 1000px; width 100px">
+<section class="Video-section" id="div1">
   <div class="Video-section__video">
     <div class="Video-section__video__overlay"></div>
     <video autoplay loop muted>
-      <source src="videos/escape.mp4">
+      <source src="videos/3d_model.mp4">
       Your browser does not support the video tag.
     </video>
-
   </div>
-
 </section>
 
-<!-- end template scrollTo -->
+<!-- SECTION PORTALGUN -->
 
-<section class="portalGunSection">
-    <div class="container portalGunSection-container">
-        <div class="portalGunSection-titlesContainer">
-            <h2 class="portalGunSection-number">01</h2>
-            <h3 class="portalGunSection-title">portal gun</h3>
-        </div>
-        <p class="portalGunSection-textContainer">
-            Aperture Science vous propose aujourd’hui une révolution.<br/>
-            Un seul point d’entrée, un seul point de sortie. <br/>
-            Entre les deux, un univers à découvrir.<br/>
-            Le futur est enfin là.
-        </p>
+<section class="PortalGun-section">
+  <div class="PortalGun-section__overlay">
+    <img src="images/blueprint_bw.jpg" alt="blueprint">
+  </div>
+  <div class="PortalGun-section__description">
+    <div class="PortalGun-section__description__left-border"></div>
+    <div class="PortalGun-section__description__container">
+      <span class="PortalGun-section__description__container__number">01</span>
+      <p class="PortalGun-section__description__container__title">Portal Gun</p>
+      <p class="PortalGun-section__description__container__paragraph">
+        Aperture Science vous propose aujourd’hui une révolution. <br>
+Un seul point d’entrée, un seul point de sortie. <br>
+Entre les deux, un univers à découvrir.<br>
+Le futur est enfin là.
+      </p>
     </div>
+    <div class="PortalGun-section__description__container__blueprint">
+      <img src="images/blueprint_trace.png" alt="blueprint">
+    </div>
+  </div>
+  </section>
 
     <div class="videoWrapper">
-        <video>
-        </video>
+      <video muted>
+        <source src="videos/escape.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
         <button class="videoStartBtn">voir la démo</button>
     </div>
+<!-- FIN SECTION PORTALGUN -->
 
-    <div class="container citationContainer">
-        <p class="portalGunSection-citation">"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.”</p>
-    </div>
+<!-- SECTION 3D MODEL -->
+<section class="Model3D-section">
+      <p class="Model3D-section__quote">"Anditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.”</p>
+  <div class="webgl-content">
+      <div id="gameContainer" style="width:1280px;height:720px"></div>
+      <div class="footer">
+          <div class="webgl-logo"></div>
+          <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+      </div>
+  </div>
 </section>
+<!-- END 3D MODEL SECTION -->
 
-<!--<div class="webgl-content">
-    <div id="gameContainer" style="width:1280px;height:720px"></div>
-    <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-    </div>
-</div>-->
 
 <!-- ESCAPE GAME SECTION -->
 <section class="Escape-section">

@@ -22,3 +22,19 @@
     }
   }
 }
+
+.Home {
+  height: 100vh;
+  background-color: rgba(255,255,255,0.5);
+  &-header {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    h2 {
+      font-size: 0px;
+      color: #000;
+      text-align: center;
+    }
+  }
+}
