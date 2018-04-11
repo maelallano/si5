@@ -2,22 +2,34 @@
 
 require_once '../../app/config.php';
 
+$_SESSION['form'] = $_POST;
+
 if (
-    empty($_POST['username']) ||
-    empty($_POST['password']))
-{
-    setAdvert('error', 'Identifiant ou mot de passe incorrects');
-    redirect('/../login.php');
+    empty($_POST['lastName']) ||
+    empty($_POST['firstName']) ||
+    empty($_POST['birthdate']) ||
+    empty($_POST['email']) ||
+    empty($_POST['sexe']) ||
+    empty($_POST['phone'])
+){
+    setAdvert('error', 'Veuillez remplir tous les champs');
+    redirect('/../register.php');
 }
 
-$stmt = $bdd->prepare('SELECT id,username,password,role FROM as_register WHERE username = :username');
-$stmt->bindValue('username', $_POST['username']);
+$stmt = $bdd->prepare('SELECT email,phone FROM as_register WHERE email = :email OR phone = :phone');
+$stmt->bindValue('email', $_POST['email']);
+$stmt->bindValue('phone', $_POST['phone']);
 $stmt->execute();
-$user = $stmt->fetch();
+$register = $stmt->fetch();
 
-if (!$user) {
-    setAdvert('error', 'Identifiant ou mot de passe incorrects');
-    redirect('/../login.php');
+if ($register) {
+    setAdvert('error', 'Une personne s\'est déjà inscrite avec cette adresse email ou ce numéro');
+    redirect('/../register.php');
 }
 
-header('Location: '. WEBROOT .'/../register.php');
+$stmt = $bdd->prepare('');
+$stmt->execute();
+
+$_SESSION['form'] = [];
+setAdvert('success', 'Inscription validée !');
+redirect('/../register.php');
