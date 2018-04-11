@@ -7,4 +7,4 @@
     <link rel="shortcut icon" href="./favicon.ico">
     <link rel="stylesheet" href="<?=WEBROOT?>build/app.css">
 </head>
-<body>
+<body onscroll="scaleHeaderText()">

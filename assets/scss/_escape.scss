@@ -1,0 +1,119 @@
+.Escape-section {
+  width: 100vw;
+  background: linear-gradient(#333333, #000);;
+
+  &__description {
+    height: 90vh;
+    width: 62%;
+    margin: auto;
+    display: flex;
+
+    &__left-border {
+      width: 3px;
+      height: 73vh;
+      margin-top: 50px;
+      background: #fff;
+    }
+
+    &__container {
+      padding-left: 10%;
+      margin-top: 40px;
+      color: #fff;
+
+      &__number {
+        font-family: $textRegular;
+        font-size: 100px;
+        border-bottom: 2px solid #fff;
+      }
+
+      &__title {
+        padding-top: 80px;
+        font-family: $textRegular;
+        text-transform: uppercase;
+        font-size: 36px;
+      }
+
+      &__paragraph {
+        padding-top: 80px;
+        font-family: $textLight;
+        font-size: 20px;
+        line-height: 40px;
+      }
+    }
+  }
+
+  &__video {
+    width: 100vw;
+    height: 400px;
+    overflow: hidden;
+
+    & > video {
+      object-fit: cover;
+      width:100%;
+      height:100%;
+    }
+  }
+
+  video::-webkit-media-controls {
+    display:none !important;
+  }
+
+  &__quote {
+    color: #fff;
+    margin: 80px auto;
+    text-align: center;
+    width: 70%;
+    font-family: $textLight;
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  &__registration {
+    text-align: center;
+    color: #fff;
+
+    &__title {
+      display: inline-block;
+      padding-bottom: 5px;
+      margin: 100px 0;
+      text-transform: uppercase;
+      font-family: $textLight;
+      font-size: 30px;
+      border-bottom: 3px solid #fff;
+    }
+
+    &__icons {
+      display: flex;
+      width: 60%;
+      justify-content: space-between;
+      margin: auto;
+
+      &__icon-container {
+
+        & > img {
+          width: 90%;
+        }
+      }
+    }
+
+    &__span {
+      display: inline-block;
+      font-family: $textLight;
+      font-size: 25px;
+      text-transform: uppercase;
+      margin: 100px 0 20px 0;
+    }
+
+    &__container {
+      width: 7%;
+      margin: auto;
+      text-align: center;
+      padding-bottom: 100px;
+
+      &__link > img {
+        width: 85%;
+        cursor: pointer;
+      }
+    }
+  }
+}

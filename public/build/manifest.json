@@ -1,4 +1,9 @@
 {
   "build/app.css": "/build/app.css",
-  "build/app.js": "/build/app.js"
+  "build/app.js": "/build/app.js",
+  "build/fonts/Oswald-Bold.ttf": "/build/fonts/Oswald-Bold.ad9c6c18.ttf",
+  "build/fonts/Oswald-ExtraLight.ttf": "/build/fonts/Oswald-ExtraLight.b889dd22.ttf",
+  "build/fonts/Oswald-Light.ttf": "/build/fonts/Oswald-Light.d10552fd.ttf",
+  "build/fonts/Oswald-Regular.ttf": "/build/fonts/Oswald-Regular.68a85f5c.ttf",
+  "build/images/blueprint_bw.jpg": "/build/images/blueprint_bw.ae24cf73.jpg"
 }
