@@ -4,6 +4,34 @@ $color1: #fff;
 // Fonts
 $font1: 'Arial';
 
+// Layer Width
+$layerWidth: 960px;
+
+// Keyframes
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-in {
+  -webkit-animation: fadeIn .5s ease-in 1 forwards;
+  animation: fadeIn .5s ease-in 1 forwards;
+  opacity: 0;
+}
+
+.fade-out {
+  -webkit-animation: fadeOut .5s ease-in 1 forwards;
+  animation: fadeOut .5s ease-in 1 forwards;
+  opacity: 1;
+}
+
 body {
   background: $color1;
   font-family: $font1;
