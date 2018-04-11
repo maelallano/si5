@@ -11,7 +11,7 @@ if (isLogged()) {
 echo $_SESSION['csrf'];
 ?>
 
-    <div class="container backOffice">
+    <div class="container backOffice login">
         <div class="header">
             <h1><?=SITE_NAME?></h1>
             <p>Veuillez vous connecter pour continuer</p>
